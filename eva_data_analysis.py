@@ -2,6 +2,7 @@ import json
 import csv
 import datetime as dt
 import matplotlib.pyplot as plt
+import pandas as pd
 
 # https://data.nasa.gov/resource/eva.json (with modifications)
 input_file = open('eva-data.json', 'r')
