@@ -1,3 +1,4 @@
+import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import sys
@@ -80,16 +81,18 @@ def add_duration_hours_variable(df):
 
 if __name__ == "__main__":
 
+    if not os.path.exists('./results/'):
+        os.makedirs('./results/')
     if len(sys.argv) < 3:
         # less than 3 command line arguments, assuming we use default file names
         # https://data.nasa.gov/resource/eva.json (with modifications)
-        input_file = open('eva-data.json', 'r')
-        output_file = open('eva-data.csv', 'w')  # JSON data output to this CSV file
+        input_file = open('data/eva-data.json', 'r')
+        output_file = open('results/eva-data.csv', 'w')  # JSON data output to this CSV file
     else:
         input_file = sys.argv[1]
         output_file = sys.argv[2]
 
-    graph_file = './cumulative_eva_graph.png'  # name that graph will be saved to
+    graph_file = 'results/cumulative_eva_graph.png'  # name that graph will be saved to
 
     # Read in and clean up data - including sorting by date
     eva_data = read_json_to_dataframe(input_file)
