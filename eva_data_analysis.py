@@ -1,12 +1,14 @@
+import json
+import csv
+import datetime as dt
 # https://data.nasa.gov/resource/eva.json (with modifications)
-data_f = open('.eva-data.json', 'r')
-data_t = open('.eva-data.csv','w')
+data_f = open('eva-data.json', 'r')
+data_t = open('eva-data.csv','w')
 g_file = './cumulative_eva_graph.png'
 
 fieldnames = ("EVA #", "Country", "Crew    ", "Vehicle", "Date", "Duration", "Purpose")
 
 data=[]
-import json
 
 for i in range(374):
     line=data_f.readline()
@@ -14,11 +16,8 @@ for i in range(374):
     data.append(json.loads(line[1:-1]))
 #data.pop(0)
 ## Comment out this bit if you don't want the spreadsheet
-import csv
 
 w=csv.writer(data_t)
-
-import datetime as dt
 
 time = []
 date =[]
