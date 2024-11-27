@@ -13,13 +13,13 @@ fieldnames = ("EVA #", "Country", "Crew    ", "Vehicle", "Date", "Duration", "Pu
 data=[]
 
 for i in range(374):
-    line=data_f.readline()
+    line=input_file.readline()
     print(line)
     data.append(json.loads(line[1:-1]))
 #data.pop(0)
 ## Comment out this bit if you don't want the spreadsheet
 
-csv_writer=csv.writer(data_t)
+csv_writer=csv.writer(output_file)
 
 time = []
 date =[]
@@ -28,7 +28,7 @@ j=0
 for i in data:
     print(data[j])
     # and this bit
-    w.writerow(data[j].values())
+    csv_writer.writerow(data[j].values())
     if 'duration' in data[j].keys():
         tt=data[j]['duration']
         if tt == '':
@@ -57,5 +57,5 @@ plt.plot(date,t[1:], 'ko-')
 plt.xlabel('Year')
 plt.ylabel('Total time spent in space to date (hours)')
 plt.tight_layout()
-plt.savefig(g_file)
+plt.savefig(graph_file)
 plt.show()
