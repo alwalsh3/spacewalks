@@ -1,3 +1,8 @@
+"""
+Copyright (c) 2024 Amber Walsh
+MIT License
+Details found in LICEENSE
+"""
 import os
 import matplotlib.pyplot as plt
 import pandas as pd
