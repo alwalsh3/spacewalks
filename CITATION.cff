@@ -1,0 +1,17 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Spacewalks
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Amber
+    family-names: Walsh
+    email: amber.walsh@noc.ac.uk
+    affiliation: National Oceanography Centre
+repository-code: 'https://github.com/alwalsh3/spacewalks'
+abstract: Spacewalks is software that ....
+license: MIT
