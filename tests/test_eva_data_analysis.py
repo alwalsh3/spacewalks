@@ -47,6 +47,6 @@ def test_calculate_crew_size(input_value, expected_result):
 def test_calculate_crew_size_edge_cases():
 
     # Edge case 1
-    actual_result = calculate_crew_size("")
+    actual_result = calculate_crew_size(""))
     expected_result = None
     assert actual_result == expected_result
