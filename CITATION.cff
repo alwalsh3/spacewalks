@@ -12,6 +12,7 @@ authors:
     family-names: Walsh
     email: amber.walsh@noc.ac.uk
     affiliation: National Oceanography Centre
+    orcid: 0000-0002-0698-2047
 repository-code: 'https://github.com/alwalsh3/spacewalks'
 abstract: Spacewalks is software that ....
 license: MIT
