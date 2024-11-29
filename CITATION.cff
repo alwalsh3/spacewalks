@@ -13,6 +13,11 @@ authors:
     email: amber.walsh@noc.ac.uk
     affiliation: National Oceanography Centre
     orcid: 0000-0002-0698-2047
+  - given-names: Theresa
+    family-names: Wacker
+    email: t.wacker2@exeter.ac.uk
+    affiliation: University of Exeter
+    
 repository-code: 'https://github.com/alwalsh3/spacewalks'
 abstract: Spacewalks is software that ....
 license: MIT
