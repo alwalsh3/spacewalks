@@ -15,3 +15,7 @@ authors:
 repository-code: 'https://github.com/alwalsh3/spacewalks'
 abstract: Spacewalks is software that ....
 license: MIT
+identifiers:
+ - type: doi
+   value: 028902839.zenodo.9898
+date-released: 2024-11-29
